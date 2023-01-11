@@ -141,23 +141,4 @@ function deleteRecord($delFQDN, $delIPAddr, $delRecordType)
     }
     shell_exec('sudo sed -i \'/' . $delRecordString . '/d\' ' . $file . '');
 }
-
-function test()
-{
-    $file = '/etc/unbound/host_entries.conf';
-    $oldFQDN = 'merhaba.dns.com.';
-    $oldRecordType = 'A';
-    $oldIPAddr = '173.123.44.33';
-
-    $fqdn = 'merhaba.test.com.';
-    $recordType = 'A';
-    $ipAddr = '10.10.20.21';
-
-    $oldRecord = '' . $oldFQDN . ' ' . $oldRecordType . ' ' . $oldIPAddr . '';
-    $newRecordString = '' . $fqdn . ' ' . $recordType . ' ' . $ipAddr . '';
-
-    echo 'sudo sed -i \'s/' . $oldRecord . '/' . $newRecordString . '/g\' ' . $file . '';
-}
-
-test();
 ?>
