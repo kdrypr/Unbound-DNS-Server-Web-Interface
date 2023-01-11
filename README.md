@@ -19,7 +19,8 @@ If you have any requests, please let us know.
 ```
 
 For detailed installation you can use this [link](https://www.linuxbabe.com/ubuntu/set-up-unbound-dns-resolver-on-ubuntu-20-04-server)
-@Important!
+
+**IMPORTANT!**
 
 Please do not forget to change your resolver configuration! Use this [solution](https://www.linuxbabe.com/ubuntu/set-up-unbound-dns-resolver-on-ubuntu-20-04-server#:~:text=Step%203%3A%20Setting%20the%20Default%20DNS%20Resolver%20on%20Ubuntu%2022.04/20.04%20Server)
 
