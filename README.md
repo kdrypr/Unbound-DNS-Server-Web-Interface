@@ -65,6 +65,21 @@ Set your mysql root password and type Y for all questions.
 * Remove DNS Record
 * Reload Unbound DNS Server
 
+#### Screenshots
+![Main Screen](https://i.hizliresim.com/kltt7o7.jpg)
+
+![Add New Record](https://i.hizliresim.com/lewh2jc.jpg)
+
+![Apply Changes](https://i.hizliresim.com/57sm5g4.jpg)
+
+![Record Edit](https://i.hizliresim.com/17ivoz0.jpg)
+
+![Record Remove](https://user-images.githubusercontent.com/19524941/211917892-669800df-60f2-42b3-8906-fbca78a1dfd7.png)
+
+![Record Remove](https://user-images.githubusercontent.com/19524941/211918089-95440440-a520-48c9-a61c-3abfb1c55961.png)
+
+
+
 #### Support Team
 * [Faik COŞKUN](https://github.com/faikcoskun)
 * [Merve Latife YAPAR](https://github.com/mrvsay)
