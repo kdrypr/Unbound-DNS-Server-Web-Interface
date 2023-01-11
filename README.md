@@ -29,6 +29,29 @@ If you have any requests, please let us know.
 #sudo mysql_secure_installation
 ```
 
+#### Permission Requirement
+
+```
+#sudo nano /etc/apache2/envvars
+
+change these lines with your own user
+
+export APACHE_RUN_USER=YOUR_USER
+export APACHE_RUN_GROUP=YOUR_USER
+
+save and exit.
+
+After that you need to add your user to sudoers file,
+example:
+#sudo visudo
+add this option under %sudo   ALL=(ALL:ALL) ALL
+%YOUR_USER   ALL=(ALL) NOPASSWD:ALL
+
+save and exit.
+
+This is for sed commands and service reload operations.
+
+```
 #### Database Configuration
 ```
 #sudo mysql -u root -p
