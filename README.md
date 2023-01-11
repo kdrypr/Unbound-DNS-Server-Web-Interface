@@ -18,6 +18,11 @@ If you have any requests, please let us know.
 #sudo chmod 777 /etc/unbound/host_entries.conf
 ```
 
+For detailed installation you can use this [link](https://www.linuxbabe.com/ubuntu/set-up-unbound-dns-resolver-on-ubuntu-20-04-server)
+@Important!
+
+Please do not forget to change your resolver configuration! Use this [solution](https://www.linuxbabe.com/ubuntu/set-up-unbound-dns-resolver-on-ubuntu-20-04-server#:~:text=Step%203%3A%20Setting%20the%20Default%20DNS%20Resolver%20on%20Ubuntu%2022.04/20.04%20Server)
+
 #### Apache, PHP, Mysql Installation
 ```
 #sudo apt-get install git
@@ -50,8 +55,9 @@ add this option under %sudo   ALL=(ALL:ALL) ALL
 save and exit.
 
 This is for sed commands and service reload operations.
-
 ```
+For loggin permission you can solve via this [link](https://b4d.sablun.org/blog/2018-09-27-when-unbound-wont-write-logs/)
+
 #### Database Configuration
 ```
 #sudo mysql -u root -p
