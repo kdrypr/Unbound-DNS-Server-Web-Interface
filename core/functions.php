@@ -94,7 +94,7 @@ function checkHostEntriesHash()
 
 function restartDNSService()
 {
-    //shell_exec('sudo service unbound reload');
+    shell_exec('sudo service unbound reload');
     $lastHash = getHostEntriesHash();
     $oldHash = file_get_contents('filehash.txt');
     str_replace('filehash.txt', '', $oldHash);
