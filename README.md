@@ -57,7 +57,7 @@ save and exit.
 
 This is for sed commands and service reload operations.
 ```
-For loggin permission you can solve via this [link](https://b4d.sablun.org/blog/2018-09-27-when-unbound-wont-write-logs/)
+For logging permission you can solve via this [link](https://b4d.sablun.org/blog/2018-09-27-when-unbound-wont-write-logs/)
 
 #### Database Configuration
 ```
