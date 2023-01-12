@@ -1,6 +1,6 @@
 <?php
 $dbuser = "dns_user";
-$dbpass = "Unb0undP@ss23";
+$dbpass = "";
 $dbhost = "localhost";
 $dbname = "unbound";
 ?>

@@ -16,7 +16,7 @@ include('core/sidebar.php');
                 <div class="card">
                     <h5 class="card-header">DNS Records</h5>
                     <div class="table-responsive text-nowrap">
-                        <table class="table" id="dnsTable">
+                        <table class="table table-hover table-responsive table-striped" id="dnsTable">
                             <thead>
                             <tr>
                                 <th>#</th>
