@@ -89,6 +89,8 @@ Set your mysql root password and type Y for all questions.
 #sudo chown root:root /etc/unbound/unbound.conf
 ```
 
+#### Known Bugs
+[Apache Stops with Unknown Reason](https://github.com/kdrypr/Unbound-Web-Interface/issues/1)
 #### Features
 * Add New DNS Record ( A and MX )
 * Edit DNS Record
