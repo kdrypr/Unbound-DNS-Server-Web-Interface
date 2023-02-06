@@ -11,6 +11,11 @@
         });
     };
 </script>
+<style>
+    .logout:hover {
+        cursor: pointer;
+    }
+</style>
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
@@ -46,8 +51,8 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" onclick="logout()">
-                        <i class="menu-icon tf-icons bx bx-exit"></i>
+                    <a class="menu-link logout" onclick="logout()">
+                        <i class="menu-icon tf-icons bx bx-log-out-circle"></i>
                         <div data-i18n="Analytics">Logout</div>
                     </a>
                 </li>
