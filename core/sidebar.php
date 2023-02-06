@@ -1,4 +1,16 @@
 <body>
+<script>
+    window.onload = function () {
+        var currentPage = window.location.pathname.split("/").slice(-1)[0];
+        var menuLinks = document.querySelectorAll('.menu-inner .menu-item a');
+
+        menuLinks.forEach(function (menuLink) {
+            if (menuLink.getAttribute('href') === currentPage) {
+                menuLink.parentElement.classList.add('active');
+            }
+        });
+    };
+</script>
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
@@ -21,12 +33,25 @@
 
             <ul class="menu-inner py-1">
                 <!-- Dashboard -->
-                <li class="menu-item active">
+                <li class="menu-item">
                     <a href="dns.php" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-home-circle"></i>
                         <div data-i18n="Analytics">Dashboard</div>
                     </a>
                 </li>
+                <li class="menu-item">
+                    <a href="profile.php" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-face"></i>
+                        <div data-i18n="Analytics">Profile</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" onclick="logout()">
+                        <i class="menu-icon tf-icons bx bx-exit"></i>
+                        <div data-i18n="Analytics">Logout</div>
+                    </a>
+                </li>
+            </ul>
         </aside>
         <!-- / Menu -->
 
@@ -42,9 +67,10 @@
                         <!-- User -->
                         <li>
                             <button style="color:black;"
-                            class="btn btn-success"
-                            data-bs-toggle="modal"
-                            data-bs-target="#newDNSRecord"">Add New DNS Rule</button>
+                                    class="btn btn-success"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#newDNSRecord"
+                            ">Add New DNS Rule</button>
                         </li>
                     </ul>
                     <ul class="navbar-nav flex-row align-items-center mx-auto">
@@ -57,8 +83,9 @@
                     <ul class="navbar-nav flex-row align-items-center ms-auto">
                         <!-- User -->
                         <li>
-                            <button style="color:black;" <?php checkHostEntriesHash(); ?> class="btn btn-danger btn-buy-now"
-                                                                     onclick="restartDNSService()">Apply Rules
+                            <button style="color:black;" <?php checkHostEntriesHash(); ?>
+                                    class="btn btn-danger btn-buy-now"
+                                    onclick="restartDNSService()">Apply Rules
                             </button>
                         </li>
                         <!--/ User -->

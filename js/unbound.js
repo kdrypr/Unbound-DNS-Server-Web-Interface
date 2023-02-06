@@ -184,3 +184,57 @@ function deleteRecord(id) {
         }
     })
 }
+
+function changePassword() {
+    var oldPassword = document.getElementById('oldPassword').value;
+    var newPassword = document.getElementById('newPassword').value;
+    $.ajax({
+        type: "POST",
+        url: 'controller.php',
+        data: {
+            'oldPassword': oldPassword,
+            'newPassword': newPassword,
+            'changePassword': 'yes'
+        },
+        success: function (data) {
+            if (data === 'success') {
+                Swal.fire(
+                    'Success!',
+                    'Your password has changed.',
+                    'success'
+                )
+
+                function reload() {
+                    location.reload();
+                }
+
+                setTimeout(reload, 2000);
+            } else {
+                Swal.fire(
+                    'Oops!',
+                    'Old password is wrong, please check again!',
+                    'error'
+                )
+            }
+        }
+    });
+}
+
+function logout() {
+    $.ajax({
+        url: "logout.php",
+        type: 'POST',
+        data: {
+            'action': 'loggedout'
+        },
+        complete: function (xhr, statusText) {
+            Swal.fire("Successfully logged out!", "redirecting..", "success");
+
+            function redirect() {
+                window.location = 'index.php';
+            }
+
+            setTimeout(redirect, 2000);
+        }
+    });
+}

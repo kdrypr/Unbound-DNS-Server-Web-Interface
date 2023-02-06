@@ -53,5 +53,15 @@ if (isset($_POST['delFQDN'], $_POST['delIPAddr'], $_POST['delRecordType'], $_POS
     }
 }
 
+//Change Password
+if (isset($_POST['oldPassword'], $_POST['newPassword'], $_POST['changePassword'])) {
+    if ($_POST['changePassword'] == 'yes') {
+        echo changePassword($_POST['oldPassword'], $_POST['newPassword']);
+        http_response_code(200);
+    } else {
+        http_response_code(400);
+    }
+}
+
 
 ?>

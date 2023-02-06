@@ -141,4 +141,27 @@ function deleteRecord($delFQDN, $delIPAddr, $delRecordType)
     }
     shell_exec('sudo sed -i \'/' . $delRecordString . '/d\' ' . $file . '');
 }
+
+//change password
+
+function changePassword($oldPassword, $newPassword)
+{
+    global $mysqli;
+    $stmt = $mysqli->prepare("SELECT * FROM users WHERE username='dnsadmin'");
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+    $row = $result->fetch_array(MYSQLI_NUM);
+    if (password_verify($oldPassword, $row[2])) {
+        $newPasswordHash = password_hash($newPassword, PASSWORD_DEFAULT);
+        $stmt = $mysqli->prepare("UPDATE users SET password = ? WHERE username = 'dnsadmin'");
+        $stmt->bind_param("s", $newPasswordHash);
+        $stmt->execute();
+        $stmt->close();
+        return "success";
+    } else {
+        return "invalid";
+    }
+}
+
 ?>
