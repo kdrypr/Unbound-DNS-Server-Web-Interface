@@ -63,7 +63,7 @@
                         <a href="index.php" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                   </span>
-                            <span class="app-brand-text demo text-body fw-bolder">unbound</span>
+                            <span class="app-brand-text demo text-body fw-bolder">UNBOUND DNS SERVER</span>
                         </a>
                     </div>
                     <!-- /Logo -->
