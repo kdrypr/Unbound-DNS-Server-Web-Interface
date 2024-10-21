@@ -14,11 +14,11 @@ include('core/sidebar.php');
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="row">
             <div class="card">
-                <h5 class="card-header">Şifre Değiştir</h5>
+                <h5 class="card-header">Change Password</h5>
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
-                            <label class="control-label">Eski Şifre</label>
+                            <label class="control-label">Old Password</label>
 
                             <input type="password" class="form-control" id="oldPassword"
                                    required="required">
@@ -28,7 +28,7 @@ include('core/sidebar.php');
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
-                            <label class="control-label">Yeni Şifre</label>
+                            <label class="control-label">New Password</label>
 
                             <input type="password" class="form-control" id="newPassword"
                                    required="required">
@@ -38,7 +38,7 @@ include('core/sidebar.php');
                 <hr>
                 <div class="row">
                     <div class="col-1">
-                        <button class="btn btn-success" onclick="changePassword()">Kaydet</button>
+                        <button class="btn btn-success" onclick="changePassword()">Save</button>
                     </div>
                 </div>
                 <br>
