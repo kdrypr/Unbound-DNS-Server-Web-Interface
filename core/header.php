@@ -14,7 +14,7 @@
             content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>BEAM Unbound DNS Server</title>
+    <title>Unbound DNS Server</title>
 
     <meta name="description" content=""/>
 
