@@ -1,0 +1,161 @@
+/* InfinitumIT Corporate Identity Override
+   Primary Green: #1B8A4E (from logo)
+   Dark Green:    #15703F
+   Light Green:   #E8F5EE
+   Hover Green:   #167342
+*/
+
+/* ─── Primary Color Override ────────────────────────────────────────────── */
+
+/* Buttons */
+.btn-primary {
+    background-color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+    color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #167342 !important;
+    border-color: #167342 !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(27, 138, 78, 0.4) !important;
+}
+.btn-outline-primary {
+    color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+    color: #fff !important;
+}
+
+/* Badges */
+.bg-label-primary {
+    background-color: #E8F5EE !important;
+    color: #1B8A4E !important;
+}
+.bg-primary {
+    background-color: #1B8A4E !important;
+}
+
+/* Links */
+a {
+    color: #1B8A4E;
+}
+a:hover {
+    color: #167342;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+    background-color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+    color: #fff !important;
+}
+.page-link {
+    color: #1B8A4E !important;
+}
+.page-link:hover {
+    color: #167342 !important;
+    background-color: #E8F5EE !important;
+}
+.page-item.disabled .page-link {
+    color: #a1acb8 !important;
+}
+
+/* Menu / Sidebar */
+.menu-inner .menu-item.active > .menu-link {
+    color: #1B8A4E !important;
+    background-color: rgba(27, 138, 78, 0.08) !important;
+}
+.menu-inner .menu-item.active > .menu-link .menu-icon {
+    color: #1B8A4E !important;
+}
+.menu-inner .menu-item > .menu-link:hover {
+    color: #1B8A4E !important;
+}
+.app-brand-text {
+    color: #1B8A4E !important;
+}
+
+/* Navbar */
+.layout-navbar {
+    border-bottom: 2px solid #E8F5EE;
+}
+
+/* Form controls focus */
+.form-control:focus,
+.form-select:focus {
+    border-color: #1B8A4E !important;
+    box-shadow: 0 0 0 0.2rem rgba(27, 138, 78, 0.15) !important;
+}
+
+/* Spinner */
+.spinner-border.text-primary {
+    color: #1B8A4E !important;
+}
+
+/* Dropdown */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #1B8A4E !important;
+    background-color: #E8F5EE !important;
+}
+
+/* Card header */
+.card-header h5 {
+    color: #384551;
+}
+
+/* Table */
+.table-hover tbody tr:hover {
+    background-color: rgba(27, 138, 78, 0.04) !important;
+}
+
+/* Login page */
+.authentication-wrapper .btn-primary {
+    background-color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+}
+
+/* Badge color overrides for info type (used for User role) */
+.bg-label-info {
+    background-color: #E0F4FF !important;
+    color: #0693CF !important;
+}
+
+/* Status indicator */
+.status-indicator .dot.green {
+    background: #1B8A4E !important;
+}
+
+/* Apply Rules (keep red/danger) */
+.btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+/* DNS Query button */
+.btn-outline-info {
+    color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+}
+.btn-outline-info:hover {
+    background-color: #1B8A4E !important;
+    border-color: #1B8A4E !important;
+    color: #fff !important;
+}
+
+/* Footer */
+.content-footer {
+    border-top: 1px solid #E8F5EE;
+}
+
+/* Scrollbar */
+.ps__thumb-y {
+    background-color: #1B8A4E !important;
+}

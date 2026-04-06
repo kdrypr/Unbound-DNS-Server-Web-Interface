@@ -1,0 +1,15 @@
+# Config with credentials
+config/db.php
+
+# Runtime files
+filehash.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
